@@ -1,12 +1,6 @@
-# Serve static website using Node.js and Express web server
+# Investing For Developers
 
-## Dependencies
-
-What you need to run this app:
-
-- [Node.Js](https://nodejs.org)
-
-## Instructions
+## Quick Start
 
 ### Setup
 
@@ -16,15 +10,13 @@ What you need to run this app:
 git clone
 ```
 
-- 2 - Copy/paste static website in /public
-
-* 3 - Run this command:
+- 2 - Run this command:
 
 ```
 npm install
 ```
 
-- 4 Run this command:
+- 3 Run this command:
 
 ```
 npm start
@@ -35,5 +27,3 @@ npm start
 ```
 http://localhost:3000
 ```
-# serve-static-website-nodejs
-# investing-for-developers
