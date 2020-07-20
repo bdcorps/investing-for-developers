@@ -46,6 +46,10 @@ app.get("/", function(req, res) {
   res.sendFile(path.join(__dirname, "public", "index.html"));
 });
 
+app.get("/sitemap", function(req, res) {
+  res.sendFile(path.join(__dirname, "public", "sitemap.xml"));
+});
+
 var server = app.listen(PORT, HOST, function() {
   console.log("The server is running on http://localhost:" + PORT);
 });
