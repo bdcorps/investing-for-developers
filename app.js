@@ -16,7 +16,7 @@ app.use(bodyParser.json());
 
 app.use(express.static(path.resolve(__dirname, "public")));
 
-app.post("/user", async function(req, res) {
+app.post("/signup", async function(req, res) {
   var user = req.body;
 
   console.log(user);
@@ -29,8 +29,7 @@ app.post("/user", async function(req, res) {
       'x-mailerlite-apikey': "60a10089521e030cd6d175836e8e571a"
   },
     body: {
-        api_key: '4c3f1cb6-615d-481f-ac5f-b662408d56f8',
-        email_address: user.email,
+        email: user.email,
         fields: {
           company: "Investing For Devs"
       }
@@ -39,7 +38,7 @@ app.post("/user", async function(req, res) {
 };
  await rp(options);
 
-res.send("Done");
+res.send("Signed up successfully!");
 });
 
 app.get("/", function(req, res) {
